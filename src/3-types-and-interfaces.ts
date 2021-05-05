@@ -44,7 +44,7 @@ const myNewObjectExtended: MyNewObjectExtended = {
   d: 'str',
 };
 
-//! limitations to types
+//! how types work
 
 function fnTest(param: MyNewObjectExtended) {
   console.log(param);

@@ -43,6 +43,8 @@ const sameType5 = identity6([1, 2, 3]);
 //! a generic we have already seen
 
 const myArr: Array<number> = [];
+// const emitter = new EventEmitter<string>();
+// const subject = new Subject<number>();
 
 //! real uses of generics
 
