@@ -1,0 +1,23 @@
+{
+  "name": "typescript-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioTx/typescript-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergioTx/typescript-examples/issues"
+  },
+  "homepage": "https://github.com/SergioTx/typescript-examples#readme",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
