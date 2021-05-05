@@ -26,3 +26,11 @@ const union: A | B = { a: 1, c: 2 };
 //! intersection types
 
 const intersection: A & B = { a: 1, b: 1, c: 2 };
+
+//! keyof
+
+type KeysA = keyof A;
+const key1: KeysA = 'a';
+const key2: KeysA = 'b';
+// @ts-expect-error
+const key3: KeysA = 'c';

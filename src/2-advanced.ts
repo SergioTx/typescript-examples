@@ -72,3 +72,10 @@ strOrNum = 'str';
 
 const arrStrOrNum: (string | number)[] = [1, 'str', 2, 3, 'hi'];
 const arrStrOrNum2: Array<string | number> = [1, 'str', 2, 3, 'hi'];
+
+//! string literal union types
+
+let oneTwo: 'one' | 'two' = 'one';
+oneTwo = 'two';
+// @ts-expect-error
+oneTwo = 'three';

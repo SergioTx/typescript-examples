@@ -8,6 +8,9 @@ type MyObject = { a: string; b: number; c: string | number };
 const myObj1: MyObject = { a: 'str', b: 1, c: 2 };
 const myObj2: MyObject = { a: 'str', b: 1, c: 'str2' };
 
+type FnType = (a: string) => string;
+const strFn: FnType = (a) => a;
+
 //! optional properties
 
 type OptionalProps = { a: number; b?: number; c?: number };
@@ -40,3 +43,19 @@ const myNewObjectExtended: MyNewObjectExtended = {
   c: 1,
   d: 'str',
 };
+
+//! limitations to types
+
+function fnTest(param: MyNewObjectExtended) {
+  console.log(param);
+}
+fnTest(myNewObjectExtended);
+
+const myNewObjectExtended2 = {
+  ...myNewObjectExtended,
+  e: 1,
+  f: 2,
+  g: 3,
+  h: 4,
+};
+fnTest(myNewObjectExtended2);
